@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+android:background="#FFFFFF">
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/r_rectangle1"
+        android:text="Hotel Wise Bookings"
+        android:layout_gravity="center"
+        android:textColor="#0b05bc"
+        android:textSize="25sp"
+        android:gravity="center"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/less"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:drawableStart="@drawable/circle"
+            android:padding="5dp"
+            android:text="  5,000"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="#FF0000"
+            android:layout_height="45dp" />
+        <TextView
+            android:id="@+id/medium"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:drawableStart="@drawable/circleb"
+            android:padding="5dp"
+            android:text="5,000-20,000"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="#000080"
+            android:layout_height="45dp"/>
+
+        <TextView
+            android:id="@+id/more"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="45dp"
+            android:drawableStart="@drawable/circleg"
+            android:padding="5dp"
+            android:text="20,000"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="#008000"/>
+
+    </LinearLayout>
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/CNamesR"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:listitem="@layout/cnamesrecycler">
+        </android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+</LinearLayout>
+</ScrollView>

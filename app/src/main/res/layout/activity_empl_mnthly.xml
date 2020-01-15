@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Analytics.Darshan_Count">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/borders"
+        android:layout_margin="5dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/cinBtn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            style="?android:attr/buttonBarButtonStyle"
+            android:background="@drawable/whiteborder2"
+            android:hint="@string/start_date"
+            android:textColor="#000"
+            android:textSize="16sp"
+            android:textColorHint="#9c9a9c"
+            android:paddingStart="20dp"
+            android:paddingEnd="5dp"
+            android:drawableLeft="@drawable/cal24"
+            android:paddingLeft="20dp"
+            android:paddingRight="5dp"
+            android:drawableStart="@drawable/cal24" />
+
+        <Button
+            android:id="@+id/coutBtn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginStart="15dp"
+            style="?android:attr/buttonBarButtonStyle"
+            android:background="@drawable/whiteborder2"
+            android:drawableLeft="@drawable/cal24"
+            android:hint="@string/end_date"
+            android:textSize="16sp"
+            android:textColorHint="#9c9a9c"
+            android:textColor="#000"
+            android:paddingStart="20dp"
+            android:paddingEnd="5dp"
+            android:layout_marginLeft="15dp"
+            android:paddingRight="5dp"
+            android:paddingLeft="20dp"
+            android:drawableStart="@drawable/cal24" />
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="horizontal">
+
+    <Button
+
+        android:id="@+id/htlBtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Hotel"
+        android:textColor="#004D40"
+        android:textStyle="bold"
+        android:background="@drawable/borders"
+       />
+
+
+    <Button
+
+        android:id="@+id/darBtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Darshan"
+        android:textColor="#FFC100"
+        android:textStyle="bold"
+        android:layout_marginStart="5dp"
+        android:background="@drawable/borders"
+        android:layout_marginLeft="5dp"
+        />
+
+    <Button
+
+        android:id="@+id/trBtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Tour"
+        android:textColor="#B71C1C"
+        android:textStyle="bold"
+        android:layout_marginStart="5dp"
+        android:background="@drawable/borders"
+        android:layout_marginLeft="5dp" />
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/CNamesR"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:listitem="@layout/cnamesrecycler">
+
+        </android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+
+
+</LinearLayout>
